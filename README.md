@@ -1,2 +1,2 @@
 # OctoCity
-Octopus command line plugin for TeamCity
+Octopus command line plugin for TeamCity.

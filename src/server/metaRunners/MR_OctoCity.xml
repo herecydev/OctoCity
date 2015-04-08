@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta-runner name="OctoCity">
+	<description>Adds octo.exe packaging to TeamCity</description>
+	<settings>
+		<parameters>
+			<param name="OctoCitySource" value="" spec="text description='Source path from which 'octo.exe' will pack" display="normal" label="Pack from..." validationMode="not_empty"/>
+			<param name="OctoCityDestination" value="" spec="text description='Destination directory to which 'octo.exe' will pack" display="normal" label="Pack to..." validationMode="not_empty"/>
+			<param name="OctoCityId" value="" spec="text description='Id of the package" display="normal" label="Id" validationMode="not_empty"/>
+			<param name="OctoCityVersion" value="" spec="text description='Version of the package" display="normal" label="Version" validationMode="not_empty"/>
+		</parameters>
+		<build-runners>
+			<runner name="" type="simpleRunner">
+				<parameters>
+					<param name="script.content" value="&quot;%teamcity.agent.tools.dir%\OctoCity\bin\Octo.exe&quot; pack --id=%OctoCityId% --version=%OctoCityVersion% --basePath=%OctoCitySource% --outFolder=%OctoCityDestination%" />
+					<param name="teamcity.step.mode" value="default" />
+					<param name="use.custom.script" value="true" />
+				</parameters>
+			</runner>
+		</build-runners>
+		<requirements />
+	</settings>
+</meta-runner>
