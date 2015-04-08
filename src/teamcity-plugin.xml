@@ -3,7 +3,7 @@
   <info>
     <name>OctoCity</name>
     <display-name>OctoCity</display-name>
-    <version>0.0.1</version>
+    <version>1.0.0</version>
     <description>Adds octo.exe packaging to TeamCity</description>
     <vendor>
       <name>Dan Kirkham</name>
