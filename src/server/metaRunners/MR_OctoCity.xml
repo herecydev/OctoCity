@@ -11,7 +11,7 @@
 		<build-runners>
 			<runner name="" type="simpleRunner">
 				<parameters>
-					<param name="script.content" value="&quot;%teamcity.agent.tools.dir%\OctoCity\bin\Octo.exe&quot; pack --id=&quot;%OctoCityId%&quot; --id=&quot;%OctoCityVersion%&quot; --basePath=&quot;%OctoCitySource%&quot; --outFolder=&quot;%OctoCityDestination%&quot;" />
+					<param name="script.content" value="&quot;%teamcity.agent.tools.dir%\OctoCity\bin\Octo.exe&quot; pack --id=&quot;%OctoCityId%&quot; --version=&quot;%OctoCityVersion%&quot; --basePath=&quot;%OctoCitySource%&quot; --outFolder=&quot;%OctoCityDestination%&quot;" />
 					<param name="teamcity.step.mode" value="default" />
 					<param name="use.custom.script" value="true" />
 				</parameters>
